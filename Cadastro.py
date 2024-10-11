@@ -12,13 +12,13 @@ import time
 
 #pyautogui.PAUSE = 2.5 #pyautoui.PAUSE -> Pausa de Sec.Milesim = 6sec.0milesimos
 
-time.sleep(5)
+pyautogui.PAUSE = 2.5
 # abrir o navegador (chrome)
 pyautogui.press("win") #abrir o iniciar
 pyautogui.write("chrome") #digitar chrome
-time.sleep(5)
+
 pyautogui.press("enter") #apertar enter
-time.sleep(10)
+
 # entrar no link 
 pyautogui.write("https://dlp.hashtagtreinamentos.com/python/intensivao/login")
 pyautogui.press("enter")
@@ -38,6 +38,7 @@ pyautogui.press("tab")
 
 # Passo 3: Importar a base de produtos pra cadastrar
 pyautogui.click(x=696, y=319)
+pyautogui.PAUSE = 0.2
 
 # Passo 3: Importar a base de produtos pra cadastrar
 import pandas as pd
